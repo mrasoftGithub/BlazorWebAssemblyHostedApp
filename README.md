@@ -1,10 +1,5 @@
 # BlazorWebAssemblyHostedApp
 
-Hier staat een ASP .NET Core hosted Blazor WebAssembly App. Voor de solution is de Visual Studio 2019 IDE gebruikt. Het gebruikte .Net Framework is .Net 5.0.
+The main branch was referred to as 'master' but from october 2020 on GitHub decided to use the word 'main' instead.
 
-De voorbeeldcode bevat een implementatie die gebruik maakt van een SQL Server database. De SQL Server database zit niet in deze GitHub respository. Maak hiervoor op je SQL Server een database aan met de naam **VOORBEELD** en creëer in die database een tabel met de naam **EIGENAAR**. Neem de volgende velden op in de tabel:
-- ID (int, not null, primary key - Identity Specification, Identity increment: 1, Identity Seed: 1)
-- omschrijving (nvarchar(MAX) - Allow Nulls)
-- regio (nvarchar(50) - Allow Nulls)
-
-Pas ten slotte de connectiestring aan in configuratiebestand **appsettings.json** in je .server project.
+In this repository we still use the old name and you can find the project and its source code in the 'master' branch.
