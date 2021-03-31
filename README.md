@@ -1,4 +1,5 @@
 # BlazorWebAssemblyHostedApp
+Voorbeeldcode horend bij Blog artikel https://www.mrasoft.nl/blazor-webassembly-app/
 
 Hier staat een ASP .NET Core hosted Blazor WebAssembly App. Voor de solution is de Visual Studio 2019 IDE gebruikt. Het gebruikte .Net Framework is .Net 5.0.
 
