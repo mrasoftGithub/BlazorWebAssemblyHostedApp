@@ -10,4 +10,4 @@ De voorbeeldcode bevat een implementatie die gebruik maakt van een SQL Server da
 
 Pas ten slotte de connectiestring aan in configuratiebestand **appsettings.json** in je .server project.
 
-Meer weten? Lees dan mijn [blog](https://www.mrasoft.nl) over C# en Blazor.
+Lees ook mijn [blog](https://www.mrasoft.nl) over C# en Blazor.
