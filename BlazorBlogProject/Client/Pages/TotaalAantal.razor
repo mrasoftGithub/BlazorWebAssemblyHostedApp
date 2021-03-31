@@ -1,0 +1,47 @@
+﻿@page "/totaalaantal"
+@using BlazorBlogProject.Shared
+@inject BlazorBlogProject.Client.Services.IServiceInterface ServiceClass
+
+<h1>Totaal Aantal</h1>
+
+@if (Eigenaren == null)
+{
+    <p><em>Bezig met laden...</em></p>
+}
+else
+{
+    <div>
+        eigenaren:  @Eigenaren.Count().ToString()
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Omschrijving</th>
+                    <th>Regio</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var eigenaar in Eigenaren)
+                {
+                    <tr>
+                        <td>@eigenaar.ID</td>
+                        <td>@eigenaar.omschrijving</td>
+                        <td>@eigenaar.regio</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a class="btn btn-primary" href="/voegtoe">Voeg toe</a><br /><br />
+    </div>
+}
+
+@code
+{
+    private IEnumerable<EIGENAAR> Eigenaren = new List<EIGENAAR>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Eigenaren = await ServiceClass.TotaalAantal();
+    }
+}

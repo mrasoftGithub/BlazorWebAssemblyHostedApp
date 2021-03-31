@@ -1,0 +1,26 @@
+﻿            // -------------------------------
+            // T-SQL:
+            // Om identity seed te resetten
+            // DBCC CHECKIDENT('[EIGENAAR]', RESEED,9);
+            // GO
+            // Checking identity information: current identity value '1002'.
+            // DBCC execution completed.If DBCC printed error messages, contact your system administrator.
+            // Leidt tot een auto-nummering van 10 en hoger (omdat 9 de hoogste nummer was)
+            // -------------------------------
+
+            //------------------------------------------------------------------
+            // Startup.cs
+            // With a scoped service we get the same instance within 
+            // the scope of a given http request but a new instance
+            // accross different http requests
+            // services.AddScoped<IServiceInterface, ServiceClass>();
+            // With a transient service a new instance is provided every
+            // time an instance is requested whether it is in the scope
+            // of the same http request or across differen http requests
+            //services.AddTransient<IServiceInterface, ServiceClass>();
+            //------------------------------------------------------------------
+
+            //--------
+            // https://stackoverflow.com/questions/7784064/entity-framework-throws-exception-invalid-object-name-dbo-basecs
+            // Bij de dbSet de naam van de tabel gebruiken, dus tabel EIGENAAR
+            //--------
