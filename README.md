@@ -1,5 +1,5 @@
 # BlazorWebAssemblyHostedApp
-Voorbeeldcode horend bij de blog artikelen https://www.mrasoft.nl/blazor-webassembly-app/ en https://www.mrasoft.nl/editform/
+Voorbeeldcode horend bij de blog artikelen https://www.mrasoft.nl/blazor-webassembly-app/ en https://www.mrasoft.nl/blazor-editform/
 
 Hier staat een ASP .NET Core hosted Blazor WebAssembly App. Voor de solution is de Visual Studio 2019 IDE gebruikt. Het gebruikte .Net Framework is .Net 5.0.
 
